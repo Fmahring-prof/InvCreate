@@ -1,0 +1,22 @@
+name: InvCreate
+version: '${project.version}'
+main: de.geilonachtsmann.invcreate.CreateMenuPlugin
+api-version: 1.19
+commands:
+  createMenu:
+    description: Creates a custom inventory menu with the specified name and row size.
+    usage: /createMenu <inventoryName> <rowSize>
+  openmenu:
+    description: Opens a custom inventory with the specified name.
+    usage: /openMenu <inventoryName>
+    tab-completions:
+      - INVENTORY_NAMES
+
+
+permissions:
+  createmenu.use:
+    description: Allows players to create custom inventory menus
+    default: op
+  openmenu.use:
+    description: Allows players to open custom inventory menus
+    default: true

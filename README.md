@@ -1,2 +1,2 @@
 # InvCreate
-Not working at the moment
+the opencommand is not working.
